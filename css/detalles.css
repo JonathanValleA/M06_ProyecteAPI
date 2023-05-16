@@ -1,0 +1,105 @@
+/* style.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: fade-in 0.5s ease-in-out;
+  }
+  
+  .container h1 {
+    text-align: center;
+    text-shadow: 0 0 5px #545454;
+    margin-bottom: 30px;
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .container > * {
+    flex: 1 1 300px;
+    margin: 10px;
+  }
+  
+  .detalles-pelicula {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .detalles-pelicula:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .detalles-pelicula h2 {
+    color: #333;
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  .detalles-pelicula p {
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .detalles-pelicula img {
+    max-width: 100%;
+    width: 350px;
+    height: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .detalles-pelicula img:hover {
+    transform: scale(1.05);
+  }
+
+  .calificacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  
+  .calificacion span {
+    font-size: 24px;
+    color: #f1c40f;
+  }
+  
+  .calificacion .estrella {
+    display: inline-block;
+    margin: 0 2px;
+    color: #f1c40f;
+    transition: transform 0.2s;
+  }
+  
+  .calificacion .estrella:hover {
+    transform: scale(1.2);
+  }
